@@ -47,4 +47,12 @@
       <option value="samsung">삼성</option>
     </select>
   </form>
-  
+</form>
+
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="file">파일 업로드:</label>
+    <input type="file" name="file" class="form-control">
+    <input type="submit" value="Upload File">
+</form>
+
