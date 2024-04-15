@@ -1,0 +1,50 @@
+<h1>index</h1>
+
+<form action="" method="post">
+    {%csrf_token%}
+    <label for="username">이름:</label>
+    <input type="text" id="username" class='' name="username">
+    <input type="submit" value="제출">
+</form>
+  
+
+<h1>음식 추가</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <div>
+        <label for="foodname">음식 이름:</label>
+        <input type="text" id="foodname" name="foodname">
+    </div>
+    <br>
+    <div>
+        <label for="bio">음식 소개:</label>
+        <textarea id="bio" name="description" rows="2" cols="50"></textarea>
+    </div>
+    <input type="submit" value="제출">
+</form>
+
+<form action="" method="post">
+    <p>주문 방식:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">포장</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">매장</label>
+    <br>
+    <input type="submit" value="제출">
+</form>
+
+<form>
+    <p></p>
+    <label><input type="checkbox" name="hobby" value="sports"> 스포츠</label><br>
+    <label><input type="checkbox" name="hobby" value="reading"> 독서</label>
+  </form>
+
+  <form>
+    <label for="car">차량 선택:</label>
+    <select id="car" name="car">
+      <option value="hyundai">현대</option>
+      <option value="kia">기아</option>
+      <option value="samsung">삼성</option>
+    </select>
+  </form>
+  

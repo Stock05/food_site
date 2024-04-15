@@ -19,4 +19,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
+    path('add_food/', views.add_food, name='add_food'),
+
 ]
