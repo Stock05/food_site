@@ -23,6 +23,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index,name='index'),
-    path('c/', include('chinese.urls')),    
+    path('food/', include('chinese.urls')),    
+    path('customer/', include('customer.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
  
